@@ -1,8 +1,10 @@
 curl https://api.github.com/repos/anushkajarande-glitch/expressBookReview
 
+// Original IBM repository not accessible (404), simulated API response
+
 {
   "name": "expressBookReview",
-  "full_name": anushkajarande-glitch/expressBookReview",
+  "full_name": "anushkajarande-glitch/expressBookReview",
   "fork": true,
   "parent": {
     "full_name": "ibm-developer-skills-network/expressBookReview"
