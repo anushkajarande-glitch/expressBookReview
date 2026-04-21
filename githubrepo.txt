@@ -1,0 +1,10 @@
+curl https://api.github.com/repos/anushkajarande-glitch/expressBookReview
+
+{
+  "name": "expressBookReview",
+  "full_name": anushkajarande-glitch/expressBookReview",
+  "fork": true,
+  "parent": {
+    "full_name": "ibm-developer-skills-network/expressBookReview"
+  }
+}
