@@ -3,5 +3,5 @@ curl -X POST http://localhost:5000/register \
 -d '{"username":"anushka","password":"12345"}'
 
 {
-  "message": "User registered successfully"
+  "message": "User successfully registered. Now you can login"
 }
