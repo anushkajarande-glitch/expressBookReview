@@ -1,0 +1,18 @@
+curl http://localhost:5000/books
+
+{
+  "books": [
+    {
+      "isbn": "12345",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "reviews": {}
+    },
+    {
+      "isbn": "67890",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "reviews": {}
+    }
+  ]
+}
