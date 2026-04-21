@@ -1,0 +1,10 @@
+curl http://localhost:5000/books/12345
+
+{
+  "book": {
+    "isbn": "12345",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "reviews": {}
+  }
+}
