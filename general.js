@@ -1,34 +1,26 @@
-const axios = require('axios');
+const axios = require("axios");
 
-const BASE_URL = "http://localhost:5000";
-
-// Get all books
-async function getAllBooks() {
-    const res = await axios.get(`${BASE_URL}/books`);
-    return res.data;
-}
-
-// Get by ISBN
-async function getBookByISBN(isbn) {
-    const res = await axios.get(`${BASE_URL}/books/isbn/${isbn}`);
-    return res.data;
-}
-
-// Get by author
+/**
+ * Fetch books by author using async/await and Axios
+ * @param {string} author - name of the author
+ */
 async function getBooksByAuthor(author) {
-    const res = await axios.get(`${BASE_URL}/books/author/${author}`);
-    return res.data;
+    try {
+        // API call to fetch books by author
+        const response = await axios.get(
+            `http://localhost:5000/books/author/${author}`
+        );
+
+        // return data from API
+        return response.data;
+
+    } catch (error) {
+        console.error("Error fetching books by author:", error.message);
+        return { error: "Unable to fetch books" };
+    }
 }
 
-// Get by title
-async function getBooksByTitle(title) {
-    const res = await axios.get(`${BASE_URL}/books/title/${title}`);
-    return res.data;
-}
+// Example usage (optional testing)
+getBooksByAuthor("Author A").then(data => console.log(data));
 
-module.exports = {
-    getAllBooks,
-    getBookByISBN,
-    getBooksByAuthor,
-    getBooksByTitle
-};
+module.exports = getBooksByAuthor;
