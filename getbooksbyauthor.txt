@@ -1,12 +1,9 @@
 curl http://localhost:5000/books/author/Harper%20Lee
 
 {
-  "books": [
-    {
-      "isbn": "67890",
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "reviews": {}
-    }
-  ]
+  "67890": {
+    "author": "Harper Lee",
+    "title": "To Kill a Mockingbird",
+    "reviews": {}
+  }
 }
