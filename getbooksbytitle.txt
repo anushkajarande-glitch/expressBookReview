@@ -1,0 +1,12 @@
+curl http://localhost:5000/books/title/The%20Great%20Gatsby
+
+{
+  "books": [
+    {
+      "isbn": "12345",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "reviews": {}
+    }
+  ]
+}
